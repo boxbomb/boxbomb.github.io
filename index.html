@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Defusal专用说明书</title>
+    <title>密码机</title>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -19,154 +19,73 @@
     <div class="section">
         <div class="page page-bg-01">
             <div class="page-header">
-                <span class="page-header-doc-title">Defusal</span>
-                <span class="page-header-section-title">Defusal</span>
+                <span class="page-header-doc-title">密码机</span>
+                <span class="page-header-section-title">前言</span>
             </div>
             <div class="page-content">
-                <img src="img/Component/ModuleName.svg" class="diagram">
-                <h2>关于模块双色问题</h2>
-                <p class="flavour-text">或许是时候来点起司汉堡</p>
-
-                <p>根据下表将颜色转换为数值，并相加。然后再根据数值，在上方的黑色按钮按出相应的次数，再按下面的按钮提交。如果错误数值将清空</p>
+                <img src="img/Component/redbuttont.svg" class="diagram">
+                <h2>关于密码机</h2>
+                <p class="flavour-text">或许你可以放弃</p>
+                <p>在此面板上有多个屏幕，大屏幕从上到下依次是D1-D3，小屏幕从上到下依次为S1-S3，屏幕S1，永远显示当前加密步骤，除第一页</p>
+                <p>在第一页顶部有一个加密单词，点击换页键可以更换页面，每一个页面都为前一页面所输出进行加密，可以再下面找到方法</p>
+				<p>当你得到解谜单词时，可以有键盘输入，并提交</p>
+				<p>加密方法可能告诉你：通过获得布尔正则表达值来创建密钥，具体方式如下：</p>
+				<p>获取单词并删除重复字母</p>
+				<p>将第一个布尔表达字母转为条件，第二个布尔字母转为所需数字，通过需求，判断此布尔表达式是否正确</p>
+				<p>取一个字母表删除单词中所包含字母</p>
+				<p>如果布尔表达式为真，请将字母表放在单词后面，否则放在单词前面</p>
                 <table>
-                    <tr><th>白色</th><td>1</td></tr>
-                    <tr><th>黑色</th><td>2</td></tr>
-					<tr><th>红色</th><td>3</td></tr>
-                    <tr><th>绿色</th><td>4</td></tr>
-					<tr><th>蓝色</th><td>5</td></tr>
-                    <tr><th>黄色</th><td>6</td></tr>
+				<tr><th>A</th><td>数字为偶数</td></tr>
+                    <tr><th>B</th><td>数字为奇数</td></tr>
+                    <tr><th>C</th><td>数字为2的倍数</td></tr>
+                    <tr><th>D</th><td>数字为质数</td></tr>
+                    <tr><th>E</th><td>数字的倍数为25</td></tr>
+                    <tr><th>F</th><td>数字为平方数</td></tr>
+                    <tr><th>G</th><td>数字为立方数</td></tr>
+                    <tr><th>H</th><td>数字% 4 = 2,4</td></tr>
+                    <tr><th>I</th><td>数字共享与循环到1的奇偶校验（16-8-4-2-1-5,5 和 16 奇偶不同，所以为否）</td></tr>
                 </table>
-                
-                
-            </div>
-            <div class="page-footer relative-footer">Page 1 of 4</div>
+			</div>
+            <div class="page-footer relative-footer">密码机</div>
         </div>
-        <div class="page page-bg-01">
+       <div class="page page-bg-02">
             <div class="page-header">
-                <span class="page-header-doc-title">Defusal</span>
-                <span class="page-header-section-title">Defusal</span>
+                <span class="page-header-doc-title">密码机</span>
+                <span class="page-header-section-title">解密步骤</span>
             </div>
             <div class="page-content">
-                <img src="img/Component/arrowmath.svg" class="diagram">
-                <h2>关于模块总和箭头</h2>
-                <p class="flavour-text">或许是时候来点free stale</p>
-
-                <p>此模块下的左箭头可将总和值减一，并且切换上方按钮往左一下，则此模块下的右箭头可将总和值加一，并且切换上方按钮往右一下。同时上方显示屏显示了每个按钮应该按几次，如x=1，即为第一个按钮按一次，以此类推等。同时当按钮切换出时，每个按钮只能按一次，必须再次进行切换才能再次按下。当错误是因为按下未切换按钮，则值并不会清空，但是其余情况均会清空。提交时需要保持总和值大于0，小于10，且按钮次数已满，否则即视为错误</p>
-                
-                    
-                
-                
+                <p>通过屏幕S1上的字母找出正确的解密方式</p>
+				<a href="#CC">凯撒密码CC</a>
             </div>
-            <div class="page-footer relative-footer">Page 2 of 4</div>
+            <div class="page-footer relative-footer">密码机</div>
         </div>
-           <div class="page page-bg-01">
+		<div class="page page-bg-03">
             <div class="page-header">
-                <span class="page-header-doc-title">Defusal</span>
-                <span class="page-header-section-title">Defusal</span>
+                <span class="page-header-doc-title">密码机</span>
+                <span class="page-header-section-title">解密步骤</span>
             </div>
             <div class="page-content">
-                <img src="img/Component/bulb.svg" class="diagram">
-                <h2>关于模块灯泡难题</h2>
-                <p class="flavour-text">或许是时候来点bulb</p>
-
-                <p>在此模块上将有一个灯泡和一个颜色方块，但有时灯泡会消失。要解决这个问题，请根据下表操作</p>
-                <table>
-                    <tr>
-                        <th class="corner"></th>
-                        <th>红色</th>
-                        <th>绿色</th>
-                        <th>蓝色</th>
-                        <th>黄色</th>
-                        <th>白色</th>
-                        <th>黑色</th>
-                        
-                    </tr>
-                    <tr>
-                        <th>有灯泡</th>
-                        <td>></td>
-                        <td>!</td>
-                        <td><</td>
-                        <td>?</td>
-                        <td><</td>
-                        <td><</td>
-                      
-                    </tr>
-                    <tr>
-                        <th>没有灯泡</th>
-                        <td>?</td>
-                        <td>?</td>
-                        <td>></td>
-                        <td>!</td>
-                        <td>!</td>
-                        <td>!</td>
-                       
-                    </tr>
-                 </table>
-                  <p>根据上表决定按下去的修复符号，使用下表确定修复符号对应的颜色</p>
-                <table>
-                    
-                    <tr><th>></th><td>红色</td></tr>
-                    <tr><th><</th><td>黄色</td></tr>
-		    <tr><th>!</th><td>蓝色</td></tr>
-                    <tr><th>?</th><td>绿色</td></tr>
-               
-                </table>
-                
-            </div>
-            <div class="page-footer relative-footer">Page 3 of 4</div>
-        </div>  
-        <div class="page page-bg-01">
-            <div class="page-header">
-                <span class="page-header-doc-title">Defusal</span>
-                <span class="page-header-section-title">Defusal</span>
-            </div>
-            <div class="page-content">
-                <img src="img/Component/ModuleName.svg" class="diagram">
-                <h2>关于模块迷宫颜色</h2>
-                <p class="flavour-text">或许是时候来点9x9，9x7</p>
-
-                <p>在此模块上有一个9x9面板，用箭头来更改面板中的方块，同时方块可以改颜色，在模块上，有两个数字面板，对应着颜色和位置。上方面板数字指v1，右方为v2。要计算出应该更改方块的颜色的方块，请用v1为行，v2为列。并使用下表计算颜色并用上方显示屏提交。提交时必须切换到应切换方块，且颜色正确，否则视为错误(r=红色，b=蓝色，g = 绿色）</p>
-                <table>
-                    <tr>
-                        <th class="corner"></th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        
-                        
-                    </tr>
-                    <tr>
-                        <th>1</th>
-                        <td>r</td>
-                        <td>g</td>
-                        <td>b</td>
-                        
-                      
-                    </tr>
-                    <tr>
-                        <th>2</th>
-                        <td>r</td>
-                        <td>r</td>
-                        <td>g</td>
-                    </tr>
-                 <tr>
-                        <th>3</th>
-                        <td>g</td>
-                        <td>b</td>
-                        <td>b</td>
-                    </tr>
-		</table>
-                
-                
-            </div>
-            <div class="page-footer relative-footer">Page 4 of 4</div>
+                <H2>关于凯撒密码(CC,1)</H2>
+				<a name="CC"></a>
+				<p class="flavour-text">最经典的密码</p>
+				<p>取加密字符串，并取屏幕D1上的数字N，将加密字符串的每一个字母，在字母表中向前推进N+1个字母，那个字母为新加密字母</p>
+                <h4 style="text-align:center">示例1：</h4>
+				<p style="text-align:center">
+                 数字N：21<br>
+                 加密字符串：WPPWYD<br>
+				 WPPWYD -> ATTACH<BR>
+				 解密完成：ATTACH
+                </p>
+				<h4 style="text-align:center">示例2：</h4>
+				<p style="text-align:center">
+                 数字N：5<br>
+                 加密字符串：GRVNGKZ<br>
+				 GRVNGKZ -> ALPHABET<BR>
+				 解密完成：ALPHABET
+                </p>
+			</div>
+            <div class="page-footer relative-footer">密码机</div>
         </div>
-	    
-                
-                  
-                
-            
-        
     </div>
 </body>
 </html>
