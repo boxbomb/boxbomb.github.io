@@ -57,6 +57,7 @@
                 <p>通过屏幕S1上的字母找出正确的解密方式</p>
 				<a href="#CC">凯撒密码CC</a>
 				<a href="#AC">ATBASH密码AC</a>
+				<a href="#SC">单字母替换密码SC</a>
             </div>
             <div class="page-footer relative-footer">密码机</div>
         </div>
@@ -112,7 +113,40 @@
 			</div>
             <div class="page-footer relative-footer">密码机</div>
         </div>
+		<div class="page page-bg-05">
+            <div class="page-header">
+                <span class="page-header-doc-title">密码机</span>
+                <span class="page-header-section-title">解密步骤</span>
+            </div>
+            <div class="page-content">
+                <H2>关于单字母替换密码(AC,1)</H2>
+				<a name="SC"></a>
+				<p class="flavour-text">当然字符串的魔力大于一切</p>
+				<p>通过将屏幕D2和S2的关键词和布尔表达式的结果，创建字符串，其中条件为第一个字母，第二个字母为字母位置同等的数字</p>
+				<p>将一个字母表放在字符串下面，通过将加密字符串的每个字符，转为它正下方的字母即为新加密字母</p>
+				<h4 style="text-align:center">示例1：</h4>
+				<p style="text-align:center">
+				 加密字符串：ESJJG<BR>
+                 关键词：LAUGH<br>
+				 布尔表达式：AQ<BR>
+				 AQ -> FASLE -> BCDEFIJKMNOPQRSTVWXYZLAUGH<br>
+				 BCDEFIJKMNOPQRSTVWXYZLAUGH<br>
+				 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+				 解密完成：DOGGY
+                </p>
+				<h4 style="text-align:center">示例2：</h4>
+				<p style="text-align:center">
+                 加密字符串：SHGJ<BR>
+                 关键词：MAGA<br>
+				 布尔表达式：AQ<BR>
+				 CT -> TRUE -> MAGBCDEFHIJKLNOPQRSTUVWXYZ<br>
+				 MAGBCDEFHIJKLNOPQRSTUVWXYZ<br>
+				 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+				 解密完成：SICK
+                </p>
+			</div>
+            <div class="page-footer relative-footer">密码机</div>
+        </div>
     </div>
 </body>
 </html>
-
