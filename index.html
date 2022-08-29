@@ -58,6 +58,7 @@
 				<a href="#CC">凯撒密码CC</a>
 				<a href="#AC">ATBASH密码AC</a>
 				<a href="#SC">单字母替换密码SC</a>
+				<a href="#HC">平衡均值换位密码HC</a>
             </div>
             <div class="page-footer relative-footer">密码机</div>
         </div>
@@ -143,6 +144,32 @@
 				 MAGBCDEFHIJKLNOPQRSTUVWXYZ<br>
 				 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
 				 解密完成：SICK
+                </p>
+			</div>
+            <div class="page-footer relative-footer">密码机</div>
+			<div class="page page-bg-06">
+            <div class="page-header">
+                <span class="page-header-doc-title">密码机</span>
+                <span class="page-header-section-title">解密步骤</span>
+            </div>
+            <div class="page-content">
+                <H2>关于平衡均值换位密码(HC,1)</H2>
+				<a name="HC"></a>
+				<p class="flavour-text">当你失去一切时，它可以把你拉回吗？</p>
+				<p>屏幕D1上将显示N个字母，其中N为加密字符串长度，将这串字符串称作均值字符串</p>
+				<p>将这串字符串与加密字符串对齐，如果屏幕D2上的数字为偶数，翻转均值字符串</p>
+				<p>将均值字符串的每个字母转为字母位置数字，将它所对应的加密字符串的字母按值得大小，从小到大依次排列，对于重复，从左到右依次排列</p>
+				<h4 style="text-align:center">示例1：</h4>
+				<p style="text-align:center">
+				加密字符串：OSSTOH<br>
+				均值字符串：JZASJA<BR>
+				解密完成：SHOOTS
+                </p>
+				<h4 style="text-align:center">示例2：</h4>
+				<p style="text-align:center">
+				加密字符串：INEP<br>
+				均值字符串：FFGD<BR>
+				解密完成：PINE
                 </p>
 			</div>
             <div class="page-footer relative-footer">密码机</div>
